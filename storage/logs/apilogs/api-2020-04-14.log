@@ -1,0 +1,2 @@
+2020-04-14 03:07:52;POST;api/test;[];200;1.258;;;;127.0.0.1
+2020-04-14 03:12:25;GET;api/v1/on-covid-19/json;{"region":{"name":"Africa","avgAge":19.7,"avgDailyIncomeInUSD":5,"avgDailyIncomePopulation":0.71},"periodType":"days","timeToElapse":58,"reportedCases":674,"population":66622705,"totalHospitalBeds":1380614};200;0.929;App\Http\Controllers\CovidEstimatorController;covid19ImpactEstimator;;127.0.0.1
