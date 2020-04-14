@@ -1,5 +1,5 @@
 <table>
-@forelse ($apilogs->sortDesc() as $key => $log)
+@forelse (array_reverse($apilogs) as $key => $log)
 <tr>
 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$log->method}}</td>
 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$log->url}}</td>
