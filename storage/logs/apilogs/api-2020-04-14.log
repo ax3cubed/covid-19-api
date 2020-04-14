@@ -10,3 +10,6 @@
 2020-04-14 14:57:34;GET;api/v1/on-covid-19/logs;{"region":{"name":"Africa","avgAge":19.7,"avgDailyIncomeInUSD":5,"avgDailyIncomePopulation":0.71},"periodType":"days","timeToElapse":58,"reportedCases":674,"population":66622705,"totalHospitalBeds":1380614};500;0.555;App\Http\Controllers\App\Http\Controllers\ApiLogController;index;;127.0.0.1
 2020-04-14 15:07:17;GET;api/v1/on-covid-19/logs;[];500;0.619;App\Http\Controllers\App\Http\Controllers\ApiLogController;index;;127.0.0.1
 2020-04-14 15:11:08;GET;api/v1/on-covid-19/logs;[];200;0.652;App\Http\Controllers\ApiLogController;index;;127.0.0.1
+2020-04-14 15:22:49;GET;api/v1/on-covid-19/logs;[];500;16.510;App\Http\Controllers\ApiLogController;index;;::1
+2020-04-14 15:27:57;GET;api/v1/on-covid-19/logs;[];500;5.837;App\Http\Controllers\ApiLogController;index;;::1
+2020-04-14 15:29:07;GET;api/v1/on-covid-19/logs;[];200;0.961;App\Http\Controllers\ApiLogController;index;;::1
