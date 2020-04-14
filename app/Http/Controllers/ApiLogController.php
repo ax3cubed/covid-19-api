@@ -30,7 +30,7 @@ class ApiLogController extends Controller
         $apilogs = $logger->getLogs();
 
         if(count($apilogs)>0){
-            $apilogs = $apilogs->sortByAsc('created_at');
+            $apilogs = $apilogs->sortBy('created_at');
         }
         else{
             $apilogs = [];
