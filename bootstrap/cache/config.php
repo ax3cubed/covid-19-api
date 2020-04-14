@@ -190,7 +190,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\framework/cache/data',
+        'path' => 'C:\\xampp7\\htdocs\\api\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -356,12 +356,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\app',
+        'root' => 'C:\\xampp7\\htdocs\\api\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\app/public',
+        'root' => 'C:\\xampp7\\htdocs\\api\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -378,7 +378,7 @@
     ),
     'links' => 
     array (
-      'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\public\\storage' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\app/public',
+      'C:\\xampp7\\htdocs\\api\\public\\storage' => 'C:\\xampp7\\htdocs\\api\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -412,13 +412,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp7\\htdocs\\api\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp7\\htdocs\\api\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -468,7 +468,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp7\\htdocs\\api\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -524,7 +524,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\resources\\views/vendor/mail',
+        0 => 'C:\\xampp7\\htdocs\\api\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -603,7 +603,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\framework/sessions',
+    'files' => 'C:\\xampp7\\htdocs\\api\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -623,9 +623,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\resources\\views',
+      0 => 'C:\\xampp7\\htdocs\\api\\resources\\views',
     ),
-    'compiled' => 'C:\\xampp7\\htdocs\\covid-19-estimator-master\\api\\api\\storage\\framework\\views',
+    'compiled' => 'C:\\xampp7\\htdocs\\api\\storage\\framework\\views',
   ),
   'flare' => 
   array (
