@@ -1,5 +1,5 @@
 <table>
-@forelse ($apilogs as $key => $log)
+@forelse ($apilogs->reverse() as $key => $log)
 <tr>
 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$log->method}}</td>
 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$log->url}}</td>
