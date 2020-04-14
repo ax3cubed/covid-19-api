@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/v1/on-covid-19', 'CovidEstimatorController@covid19ImpactEstimator')->middleware('apilogger');
-Route::get('/v1/on-covid-19/{type}', 'CovidEstimatorController@covid19ImpactEstimator')->middleware('apilogger');
+Route::get('/v1/on-covid-19/xml', 'CovidEstimatorController@covid19ImpactEstimatorXml')->middleware('apilogger');
+
+Route::get('/v1/on-covid-19/json', 'CovidEstimatorController@covid19ImpactEstimatorJson')->middleware('apilogger');
+Route::get('/v1/on-covid-19/logs', 'ApiLogController@index')->name("apilogs.index");
 
 

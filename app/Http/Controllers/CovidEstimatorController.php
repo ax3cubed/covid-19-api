@@ -9,31 +9,54 @@ use Illuminate\Http\Request;
 class CovidEstimatorController extends Controller
 {
     //
-
-
-function covid19ImpactEstimator(Request $data, $type='json')
+public function covid19ImpactEstimatorJson(Request $data)
 {
-if (!$type) {
-    $tpye = 'json';
+    $input = $this->rebuildInput($data);
+  $impact = $this->estimateImpact($data);
+  $severeImpact = $this->estimateSevereImpact($data);
+  Impact::create($impact);
+
+  SevereImpact::create($severeImpact);
+
+
+
+    return $this->extimatorResponseJSON($input, $impact, $severeImpact);
+
+
+
 }
+public function covid19ImpactEstimatorXml(Request $data)
+{
+
+    $input = $this->rebuildInput($data);
+    $impact = $this->estimateImpact($data);
+    $severeImpact = $this->estimateSevereImpact($data);
+    Impact::create($impact);
+
+    SevereImpact::create($severeImpact);
+
+
+
+
+    return $this->extimatorResponseXML($input, $impact, $severeImpact);
+
+
+}
+function covid19ImpactEstimator(Request $data)
+{
 $input = $this->rebuildInput($data);
   $impact = $this->estimateImpact($data);
   $severeImpact = $this->estimateSevereImpact($data);
   Impact::create($impact);
 
   SevereImpact::create($severeImpact);
-  if ($type =="json") {
-    return $this->extimatorResponseJSON($input, $impact, $severeImpact);
-  }
-  else if($type == 'xml'){
-    return $this->extimatorResponseXML($input, $impact, $severeImpact);
-  }
-  else{
+
+
     return $this->extimatorResponseJSON($input, $impact, $severeImpact);
 
   }
 
-}
+
 
 
  function estimateImpact( $data)

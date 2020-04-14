@@ -1,11 +1,4 @@
 <?php return array (
-  'awt/apilogger' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'AWT\\Providers\\ApiLogServiceProvider',
-    ),
-  ),
   'facade/ignition' => 
   array (
     'providers' => 
